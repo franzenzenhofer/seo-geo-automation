@@ -1,0 +1,11 @@
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+# Safe XML parsing of untrusted sitemaps (XXE / entity-expansion protection)
+defusedxml>=0.7.1
+# Content-Encoding support: without these, requests returns raw compressed bytes for
+# sites that serve `Content-Encoding: br` or `zstd`, and every HTML check reports false FAILs.
+brotli>=1.1.0
+zstandard>=0.22.0
+# Optional Google Search Console integration (only used when GSC_CREDENTIALS is set)
+google-api-python-client>=2.100.0
+google-auth>=2.23.0

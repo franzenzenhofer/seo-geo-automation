@@ -1,0 +1,19 @@
+{
+  "domain": "loremipsum.franzai.com",
+  "start_url": "https://loremipsum.franzai.com/",
+  "brand_name": "Lorem Ipsum",
+  "language": "en",
+  "robots_url": "https://loremipsum.franzai.com/robots.txt",
+  "sitemap_url": "https://loremipsum.franzai.com/sitemap-index.xml",
+  "gsc_property": "",
+  "targeted_phrases": {
+    "https://loremipsum.franzai.com/": "lorem ipsum meaning",
+    "https://loremipsum.franzai.com/lorem-ipsum-history/": "lorem ipsum history",
+    "https://loremipsum.franzai.com/lorem-ipsum-alternatives/": "lorem ipsum alternatives"
+  },
+  "important_pages": [
+    {"url": "https://loremipsum.franzai.com/", "type": "homepage"},
+    {"url": "https://loremipsum.franzai.com/lorem-ipsum-history/", "type": "article"},
+    {"url": "https://loremipsum.franzai.com/lorem-ipsum-alternatives/", "type": "article"}
+  ]
+}

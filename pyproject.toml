@@ -1,0 +1,44 @@
+[project]
+name = "seo-geo-automation"
+version = "1.0.0"
+description = "Automated SEO/GEO audit: 30 tools, 200+ checks, HTML + JSON reports, optional AI synthesis via OpenRouter"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Franz Enzenhofer" }]
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+extend-exclude = ["private", "venv", ".venv", "output"]
+
+[tool.ruff.lint]
+preview = true
+explicit-preview-rules = true
+select = ["E", "F", "W", "I", "B", "UP", "PLW1514", "RUF100"]
+
+[tool.mypy]
+python_version = "3.12"
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_return_any = true
+exclude = ["^private/", "^venv/", "^\\.venv/", "^output/"]
+
+[[tool.mypy.overrides]]
+module = ["googleapiclient.*", "google.*", "playwright.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff.lint.isort]
+known-first-party = ["shared", "tools"]
+split-on-trailing-comma = false
+
+[tool.ruff.format]
+skip-magic-trailing-comma = true
